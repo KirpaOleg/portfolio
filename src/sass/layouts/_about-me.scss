@@ -1,0 +1,57 @@
+/*-----------------------------------*\
+ * #ABOUT
+\*-----------------------------------*/
+
+.about {
+  padding-block: var(--section-padding);
+
+  @media screen and (min-width: $tabletPlus) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.about-banner {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-bottom: 80px;
+  @media screen and (min-width: $tabletPlus) {
+    margin-bottom: 0;
+  }
+}
+
+.about .btn {
+  max-width: unset;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    max-width: max-content;
+  }
+}
+
+.about .btn-secondary {
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.description-text {
+  font-family: var(--ff-roboto);
+  line-height: 1.8;
+}
+@media screen and (min-width: $tablet) {
+  .btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .mobile-email {
+    display: none;
+  }
+}
