@@ -1,1 +1,12 @@
-@import './common';
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
+
+@import './layouts/header';
+@import './layouts/main-section';
+@import './layouts/about-me';
+@import './layouts/projects';
+@import './layouts/experience';
+@import './layouts/skills';
+@import './layouts/contacts';
+@import './layouts/footer';

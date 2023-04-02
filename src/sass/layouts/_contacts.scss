@@ -4,10 +4,18 @@
 
 .contact {
   padding-block: var(--section-padding);
+  @media screen and (min-width: $tabletPlus) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .contact-content {
   margin-bottom: 50px;
+  @media screen and (min-width: $tabletPlus) {
+    margin-bottom: 0;
+  }
 }
 
 .contact-list-item {
@@ -82,6 +90,9 @@
     max-width: 450px;
     margin-inline: auto;
   }
+  @media screen and (min-width: $tabletPlus) {
+    width: 100%;
+  }
 }
 
 .form-wrapper {
@@ -139,4 +150,9 @@ textarea.input-field {
   background: var(--blue);
   color: var(--bg-primary);
   border: var(--bg-primary);
+}
+@media screen and (min-width: $tabletPlus) {
+  .contact-list {
+    margin-left: -40px;
+  }
 }

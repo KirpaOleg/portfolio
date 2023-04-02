@@ -22,3 +22,21 @@
   display: inline-block;
   color: var(--raw-seinna);
 }
+
+@media screen and (min-width: $tabletPlus) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .logo {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .mobile-email {
+    display: none;
+  }
+}

@@ -13,6 +13,9 @@
   @media screen and (min-width: $tabletPlus) {
     max-width: 980px;
   }
+  @media screen and (min-width: $desktop) {
+    max-width: 1150px;
+  }
 }
 
 .h1 {
@@ -114,6 +117,9 @@
   }
   @media screen and (min-width: $tablet) {
     max-width: 430px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 460px;
   }
 }
 

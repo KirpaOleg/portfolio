@@ -3,12 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./images/pics/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
+  <body id="top" class="dark_theme">
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <main>
+      <div class="container">
+        <include src="./partials/header.html"></include>
+        <include src="./partials/main-section.html"></include>
+        <include src="./partials/about-me.html"></include>
+        <include src="./partials/skills.html"></include>
+        <include src="./partials/expirience.html"></include>
+        <include src="./partials/projects.html"></include>
+        <include src="./partials/contacts.html"></include>
+      </div>
+    </main>
   </body>
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/toUpBtn.html"></include>
 </html>

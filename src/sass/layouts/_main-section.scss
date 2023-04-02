@@ -2,9 +2,9 @@
  * #HERO
 \*-----------------------------------*/
 
-main {
-  overflow-x: hidden;
-}
+// main {
+//   overflow-x: hidden;
+// }
 
 .hero {
   min-height: 100vh;
@@ -83,8 +83,7 @@ main {
     width: 22px;
     position: fixed;
     bottom: 260px;
-    left: 40px;
-    right: auto;
+    left: -63px;
     z-index: 10;
     color: var(--color-primary);
     fill: #a8b2d1;
@@ -273,7 +272,7 @@ main {
   }
   .email-aside {
     position: fixed;
-    right: 40px;
+    right: -63px;
     bottom: 260px;
   }
 
@@ -298,5 +297,15 @@ main {
     height: 260px;
     margin: 0px auto;
     background-color: #a8b2d1;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero-social-list {
+    left: -80px;
+  }
+
+  .scroll-down {
+    right: -80px;
   }
 }

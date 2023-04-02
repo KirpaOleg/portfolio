@@ -20,8 +20,10 @@
   @media screen and (min-width: $tabletPlus) {
     margin-bottom: 0;
   }
+  @media screen and (min-width: $desktop) {
+    max-width: 450px;
+  }
 }
-
 .about .btn {
   max-width: unset;
   width: 100%;

@@ -6,9 +6,17 @@
   .project-list {
     column-count: 2;
     column-gap: 25px;
+    @media screen and (min-width: $tabletPlus) {
+      column-count: 3;
+    }
   }
-  .project-list > li:first-child {
-    column-span: all;
+}
+.project-list > li:first-child {
+  column-span: all;
+  @media screen and (min-width: $tabletPlus) {
+    column-span: unset;
+    margin: 25px;
+    margin-left: 0;
   }
 }
 
