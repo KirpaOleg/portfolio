@@ -35,11 +35,12 @@
 }
 
 .contact-item-title {
+  color: var(--lightest-slate);
   margin-bottom: 10px;
 }
 
 .contact-list-item .contact-info {
-  color: var(--color-primary);
+  color: var(--slate);
   font-style: normal;
   line-height: 1.6;
   transition: var(--transition-1);

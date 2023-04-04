@@ -139,6 +139,10 @@ a.inline-link {
 
 .job-decsruption-wrapper ul li {
   position: relative;
+  color: var(--slate);
   margin-bottom: 10px;
   list-style: circle;
+}
+.is-hidden {
+  display: none;
 }

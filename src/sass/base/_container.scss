@@ -112,6 +112,7 @@
 .section-title {
   max-width: 350px;
   margin-bottom: 30px;
+  color: var(--lightest-slate);
   @media screen and (min-width: $mobile) {
     max-width: 380px;
   }
@@ -126,6 +127,7 @@
 .section-text {
   line-height: 1.8;
   margin-bottom: 30px;
+  color: var(--slate);
 }
 
 .tooltip {
