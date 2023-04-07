@@ -88,6 +88,16 @@
     color: var(--color-primary);
     fill: #a8b2d1;
   }
+  // .social-aside::after {
+  //   content: '';
+  //   position: absolute;
+  //   display: block;
+  //   left: 10px;
+  //   width: 1px;
+  //   height: 260px;
+  //   margin: 0px auto;
+  //   background-color: #a8b2d1;
+  // }
 }
 
 @media (max-width: 1080px) {
@@ -122,17 +132,6 @@
   margin-bottom: 20px;
 }
 
-.social-aside::after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: 10px;
-  width: 1px;
-  height: 260px;
-  margin: 0px auto;
-  background-color: #a8b2d1;
-}
-
 :is(.hero-social-list, .scroll-down) {
   display: none;
 }
@@ -163,6 +162,9 @@
 .social-list {
   margin-top: 20px;
   margin-bottom: 20px;
+  @media screen and (max-width: 1080px) {
+    display: none;
+  }
 }
 
 /* ABOUT */
@@ -238,15 +240,15 @@
     bottom: 92px;
     left: -30px;
   }
-  .hero-social-list::after {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: 13px;
-    width: 2px;
-    height: 30px;
-    background: var(--color-secondary);
-  }
+  // .hero-social-list::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: -40px;
+  //   left: 13px;
+  //   width: 2px;
+  //   height: 30px;
+  //   background: var(--color-secondary);
+  // }
   .hero-social-link {
     position: relative;
     color: var(--color-secondary);
@@ -274,6 +276,9 @@
     position: fixed;
     right: -63px;
     bottom: 260px;
+    @media screen and (max-width: 1080px) {
+      display: none;
+    }
   }
 
   .email-aside a {
@@ -287,17 +292,17 @@
     writing-mode: vertical-rl;
   }
 
-  .email-aside::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 17px;
+  // .email-aside::after {
+  //   content: '';
+  //   position: absolute;
+  //   display: block;
+  //   left: 17px;
 
-    width: 1px;
-    height: 260px;
-    margin: 0px auto;
-    background-color: #a8b2d1;
-  }
+  //   width: 1px;
+  //   height: 260px;
+  //   margin: 0px auto;
+  //   background-color: #a8b2d1;
+  // }
 }
 
 @media screen and (min-width: $desktop) {

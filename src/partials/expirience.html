@@ -5,22 +5,13 @@
   </h2>
   <div class="inner">
     <div aria-label="Job" class="expirience-wrapper">
-      <button class="expirience-btn tabs__btn">
-        <span>Carnival Cruises</span></button
-      ><button
-        class="expirience-btn-accent expirience-btn tabs__btn tabs__btn_active"
-      >
-        <span>Princess Cruises</span></button
-      ><button
-        aria-selected="false"
-        class="expirience-btn--accent expirience-btn tabs__btn"
-      >
-        <span>Hello!Coffee</span>
-      </button>
+      <button class="expirience-btn">Carnival Cruises</button>
+      <button class="expirience-btn">Princess Cruises</button>
+      <button class="expirience-btn">Hello!Coffee</button>
       <div></div>
     </div>
-    <div class="job-decsruption">
-      <div id="content-1" class="job-decsruption-wrapper is-hidden">
+    <ul class="job-decsruption">
+      <li data-job="Carnival Cruises" class="job-decsruption-wrapper is-hidden">
         <h3>
           <span>Casino Dealer</span
           ><span class="company"
@@ -44,8 +35,8 @@
             <li>Observe and enforce all rules during play.</li>
           </ul>
         </div>
-      </div>
-      <div id="content-2" class="job-decsruption-wrapper is-hidden">
+      </li>
+      <li data-job="Princess Cruises" class="job-decsruption-wrapper is-hidden">
         <h3>
           <span>Galley Steward</span
           ><span class="company"
@@ -71,8 +62,8 @@
             <li>Receiving stores.</li>
           </ul>
         </div>
-      </div>
-      <div id="content-3" class="job-decsruption-wrapper">
+      </li>
+      <li data-job="Hello!Coffee" class="job-decsruption-wrapper">
         <h3>
           <span>Barista</span
           ><span class="company"
@@ -110,7 +101,7 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>

@@ -91,3 +91,22 @@ if (localStorage.getItem('theme') === 'light_theme') {
   document.body.classList.remove('light_theme');
   document.body.classList.add('dark_theme');
 }
+
+/**
+ * expirience toggle
+ */
+
+const expirienceBtns = document.querySelectorAll('.expirience-btn');
+const jobs = document.querySelectorAll('.job-decsruption-wrapper');
+expirienceBtns.forEach(btn => {
+  btn.addEventListener('click', e => {
+    const textContent = e.target.textContent;
+    jobs.forEach(job => {
+      if (job.dataset.job === textContent) {
+        job.classList.remove('is-hidden');
+      } else {
+        job.classList.add('is-hidden');
+      }
+    });
+  });
+});
