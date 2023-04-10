@@ -16,14 +16,22 @@
     display: block;
   }
 }
-
-.expirience-wrapper {
-  position: relative;
-  z-index: 3;
-  width: max-content;
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
+@media screen and (max-width: 1080px) {
+  .expirience-wrapper {
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .expirience-wrapper {
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
 }
 
 .expirience-btn-accent {

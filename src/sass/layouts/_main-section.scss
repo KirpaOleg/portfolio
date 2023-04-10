@@ -12,18 +12,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 115px;
+  // padding-top: 115px;
   margin-bottom: var(--section-padding);
 
   @media screen and (min-width: $tabletPlus) {
     position: relative;
     height: 100vh;
+    margin-left: 100px;
   }
 }
 
 @media screen and (max-width: 1080px) {
   .hero {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 }
 
@@ -41,6 +42,7 @@
 
 .hero-wrapper {
   margin-right: auto;
+  // margin-bottom: 50px;
 }
 .hero-wrapper h1 {
   margin: 0px 0px 30px 4px;
@@ -127,11 +129,6 @@
   padding: 0px;
   list-style: none;
 }
-
-.feather:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 :is(.hero-social-list, .scroll-down) {
   display: none;
 }
@@ -160,10 +157,13 @@
 }
 
 .social-list {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  @media screen and (max-width: 1080px) {
-    display: none;
+  display: flex;
+  gap: 10px;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 184px;
+    left: 38px;
+    flex-direction: column;
   }
 }
 
@@ -197,6 +197,7 @@
 
   .description .inner img {
     margin: 0 auto;
+    width: auto;
   }
 }
 
@@ -272,25 +273,6 @@
     --trans-x: 0;
     opacity: 1;
   }
-  .email-aside {
-    position: fixed;
-    right: -63px;
-    bottom: 260px;
-    @media screen and (max-width: 1080px) {
-      display: none;
-    }
-  }
-
-  .email-aside a {
-    margin: 20px auto;
-    padding: 10px;
-    color: #a8b2d1;
-    font-family: 'Fira Code', 'sanf-serif';
-    font-size: 17px;
-    line-height: 18px;
-    letter-spacing: 0.1em;
-    writing-mode: vertical-rl;
-  }
 
   // .email-aside::after {
   //   content: '';
@@ -313,4 +295,23 @@
   .scroll-down {
     right: -80px;
   }
+}
+.email-aside {
+  position: absolute;
+  top: 171px;
+  right: 38px;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.email-aside a {
+  margin: 20px auto;
+  padding: 10px;
+  color: #a8b2d1;
+  font-family: 'Fira Code', 'sanf-serif';
+  font-size: 17px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
 }
