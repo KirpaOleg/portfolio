@@ -1,18 +1,18 @@
 {
-  "name": "parcel-project-template",
+  "name": "portfolio",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://HennadiiBorysevych.github.io/portfolio",
+  "homepage": "https://KirpaOleg.github.io/portfolio",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /portfolio/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HennadiiBorysevych/portfolio.git"
+    "url": "git+https://github.com/KirpaOleg/portfolio.git"
   },
   "keywords": [],
-  "author": "Hennadii Borysevych <genuch3@gmail.com>",
+  "author": "Kirpa Oleg <profix.ok@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "modern-normalize": "^1.1.0"

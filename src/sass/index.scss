@@ -1,13 +1,6 @@
+@import './base/normalize';
 @import './utils/variables';
-@import './utils/toGoBtn';
-@import './base/common';
-@import './base/container';
+@import './utils/braikpoints';
+@import './base/global';
 
-@import './layouts/header';
-@import './layouts/main-section';
-@import './layouts/about-me';
-@import './layouts/projects';
-@import './layouts/experience';
-@import './layouts/skills';
-@import './layouts/contacts';
-@import './layouts/footer';
+@import './components/header';
