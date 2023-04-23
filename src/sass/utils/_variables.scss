@@ -1,15 +1,27 @@
 :root {
-  body.dark_theme {
-    --bg-primary: teal;
-    --bg-secondary: #014D4E;
-    --color-primary: white;
-    --color-secondary: hsl(0, 0%, 62%);
-  }
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition-one: 0.25s ease-in-out;
+  --ffamily: 'Roboto', sans-serif;
+  --color-shadow: rgba(8, 8, 8, 0.5);
+  --color-light: rgb(43, 150, 150);
+  --color-dark: rgb(5, 61, 61);
 
-  body.light_theme {
-    --bg-primary: #ffffff;
-    --bg-secondary: hsla(0, 0%, 100%, 0.336);
-    --color-primary: hsl(0, 0%, 12%);
-    --color-secondary: hsl(0, 0%, 37%);
-  }
+}
+
+body.dark_theme {
+  --bg-primary: teal;
+  --bg-primary-light: rgb(95, 169, 169);
+  --bg-secondary: rgb(0, 76, 76);
+  --bg-secondary-light: white;
+  --color-primary: white;
+  --color-secondary: rgb(63, 63, 63);
+}
+
+body.light_theme {
+  --bg-primary: white;
+  --bg-primary-light: rgba(75, 232, 232, 0.5);
+  --bg-secondary: rgb(255, 255, 255);
+  --bg-secondary-light: teal;
+  --color-primary: rgb(63, 63, 63);
+  --color-secondary: white;
 }

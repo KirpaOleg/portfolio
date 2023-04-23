@@ -8,9 +8,7 @@ const elemToggleFunc = function (elem) {
   elem.classList.toggle('active');
 };
 
-/**
- * header sticky & go to top
- */
+// fix header // фиксирований header
 
 const header = document.querySelector('[data-header]');
 const goTopBtn = document.querySelector('[data-go-top]');
@@ -56,12 +54,9 @@ for (let i = 0; i < toggleBtns.length; i++) {
   });
 }
 
-/**
- * dark & light theme toggle
- */
+// dark & light theme // перемикання тем
 
 const themeToggleBtn = document.querySelector('[data-theme-btn]');
-
 themeToggleBtn.addEventListener('click', function () {
   elemToggleFunc(themeToggleBtn);
 
@@ -78,9 +73,7 @@ themeToggleBtn.addEventListener('click', function () {
   }
 });
 
-/**
- * check & apply last time selected theme from localStorage
- */
+// writing and GЕТ temes to localStorage // запись и получения последнего варианта
 
 if (localStorage.getItem('theme') === 'light_theme') {
   themeToggleBtn.classList.add('active');

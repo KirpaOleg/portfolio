@@ -15,6 +15,7 @@
   "author": "Kirpa Oleg <profix.ok@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "caniuse-lite": "^1.0.30001481",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
