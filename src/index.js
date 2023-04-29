@@ -1,12 +1,12 @@
-'use strict';
+// 'use strict';
 
 // /**
 //  * element toggle function
 //  */
 
-// const elemToggleFunc = function (elem) {
-//   elem.classList.toggle('active');
-// };
+const elemToggleFunc = function (elem) {
+  elem.classList.toggle('active');
+};
 
 // fix header // фиксирований header
 
