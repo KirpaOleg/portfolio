@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // /**
 //  * element toggle function
