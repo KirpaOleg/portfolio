@@ -1,12 +1,12 @@
-'use strict';
+// 'use strict';
 
-/**
- * element toggle function
- */
+// /**
+//  * element toggle function
+//  */
 
-const elemToggleFunc = function (elem) {
-  elem.classList.toggle('active');
-};
+// const elemToggleFunc = function (elem) {
+//   elem.classList.toggle('active');
+// };
 
 // fix header // фиксирований header
 
@@ -34,26 +34,25 @@ navToggleBtn.addEventListener('click', function () {
   elemToggleFunc(navToggleBtn);
   elemToggleFunc(navbar);
   elemToggleFunc(document.body);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 /**
  * skills toggle
  */
 
-const toggleBtnBox = document.querySelector('[data-toggle-box]');
-const toggleBtns = document.querySelectorAll('[data-toggle-btn]');
-const skillsBox = document.querySelector('[data-skills-box]');
+// const toggleBtnBox = document.querySelector('[data-toggle-box]');
+// const toggleBtns = document.querySelectorAll('[data-toggle-btn]');
+// const skillsBox = document.querySelector('[data-skills-box]');
 
-for (let i = 0; i < toggleBtns.length; i++) {
-  toggleBtns[i].addEventListener('click', function () {
-    elemToggleFunc(toggleBtnBox);
-    for (let i = 0; i < toggleBtns.length; i++) {
-      elemToggleFunc(toggleBtns[i]);
-    }
-    elemToggleFunc(skillsBox);
-  });
-}
+// for (let i = 0; i < toggleBtns.length; i++) {
+//   toggleBtns[i].addEventListener('click', function () {
+//     elemToggleFunc(toggleBtnBox);
+//     for (let i = 0; i < toggleBtns.length; i++) {
+//       elemToggleFunc(toggleBtns[i]);
+//     }
+//     elemToggleFunc(skillsBox);
+//   });
+// }
 
 // dark & light theme // перемикання тем
 
@@ -90,17 +89,17 @@ if (localStorage.getItem('theme') === 'light_theme') {
  * expirience toggle
  */
 
-const expirienceBtns = document.querySelectorAll('.expirience-btn');
-const jobs = document.querySelectorAll('.job-decsruption-wrapper');
-expirienceBtns.forEach(btn => {
-  btn.addEventListener('click', e => {
-    const textContent = e.target.textContent;
-    jobs.forEach(job => {
-      if (job.dataset.job === textContent) {
-        job.classList.remove('is-hidden');
-      } else {
-        job.classList.add('is-hidden');
-      }
-    });
-  });
-});
+// const expirienceBtns = document.querySelectorAll('.expirience-btn');
+// const jobs = document.querySelectorAll('.job-decsruption-wrapper');
+// expirienceBtns.forEach(btn => {
+//   btn.addEventListener('click', e => {
+//     const textContent = e.target.textContent;
+//     jobs.forEach(job => {
+//       if (job.dataset.job === textContent) {
+//         job.classList.remove('is-hidden');
+//       } else {
+//         job.classList.add('is-hidden');
+//       }
+//     });
+//   });
+// });
