@@ -1,34 +1,16 @@
 .description {
-  padding-bottom: 50px;
+  padding-top: 100px;
+
+  &__box {
+    position: relative;
+  }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-size: 50px;
     text-align: center;
     text-shadow: 5px 5px 1px var(--color-shadow);
-
-
-    &::before {
-        content: "";
-        display: block;
-        width: 130px;
-        height: 5px;
-        background: var(--color-dark);
-        left: 450px;
-        top: 680px;
-        position: absolute;
-      }
-    
-      &::after {
-        content: "";
-        display: block;
-        width: 130px;
-        height: 5px;
-        background: var(--color-dark);
-        right: 450px;
-        top: 680px;
-        position: absolute;
-      }
+    padding-right: 320px;
   }
 
   &__wrapper {
@@ -58,6 +40,33 @@
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: var(--color-shadow-small);
   }
 }
 
+.about-linePreloader {
+  width: 850px;
+  height: 4px;
+  background: linear-gradient(to right, var(--bg-secondary), var(--bg-secondary));
+  background-color: var(--bg-secondary-light);
+  box-shadow: var(--color-shadow-small-reverse);
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  border-radius: 4px;
+  background-size: 20%;
+  background-repeat: repeat-y;
+  background-position: -25% 0;
+  animation: scroll 5s ease-in-out infinite;
+  transform: scale(-1);
+}
+
+@keyframes scroll {
+  50% {
+    background-size: 80%
+  }
+
+  100% {
+    background-position: 125% 0;
+  }
+}

@@ -34,6 +34,7 @@ navToggleBtn.addEventListener('click', function () {
   elemToggleFunc(navToggleBtn);
   elemToggleFunc(navbar);
   elemToggleFunc(document.body);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 /**

@@ -3,14 +3,16 @@
   --transition-one: 0.25s ease-in-out;
   --ffamily: 'Roboto', sans-serif;
   --color-shadow: rgba(8, 8, 8, 0.5);
+  --color-shadow-small: 3px 3px 10px black;
+  --color-shadow-small-reverse: -3px -3px 10px black;
   --color-light: rgb(43, 150, 150);
   --color-dark: rgb(5, 61, 61);
 
 }
 
 body.dark_theme {
-  --bg-primary: teal;
-  --bg-primary-light: rgb(95, 169, 169);
+  --bg-primary: teal; 
+  --bg-primary-light: rgb(43, 150, 150);
   --bg-secondary: rgb(0, 76, 76);
   --bg-secondary-light: white;
   --color-primary: white;
@@ -19,7 +21,7 @@ body.dark_theme {
 
 body.light_theme {
   --bg-primary: white;
-  --bg-primary-light: rgba(75, 232, 232, 0.5);
+  --bg-primary-light: rgb(43, 150, 150);
   --bg-secondary: rgb(255, 255, 255);
   --bg-secondary-light: teal;
   --color-primary: rgb(63, 63, 63);

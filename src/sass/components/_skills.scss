@@ -1,0 +1,88 @@
+.skills {
+  padding-top: 100px;
+
+  &__content {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 1px var(--color-shadow);
+    padding-left: 320px;
+  }
+
+  &__text {
+    max-width: 710px;
+    line-height: 1.4;
+    color: var(--color-primary);
+    font-size: 24px;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__card {
+    position: relative;
+    background: var(--bg-secondary);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: var(--color-shadow-small);
+    cursor: pointer;
+    transition: var(--transition-one);
+
+    &:hover > .tooltip {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.tooltip {
+  background: var(--bg-secondary-light);
+  color: var(--color-secondary);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: var(--color-shadow-small);
+  opacity: 0;
+  transition: var(--transition-one);
+  padding: 5px 10px;
+  position: absolute;
+  top: -40px;
+  transform: translateY(-10px);
+}
+
+.linePreloader {
+  width: 850px;
+  height: 4px;
+  background: linear-gradient(to right, var(--bg-secondary), var(--bg-secondary));
+  background-color: var(--bg-secondary-light);
+  box-shadow: var(--color-shadow-small);
+  position: absolute;
+  top: 65px;
+  border-radius: 4px;
+  background-size: 20%;
+  background-repeat: repeat-y;
+  background-position: -25% 0;
+  animation: scroll 5s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  50% {
+    background-size: 80%
+  }
+  100% {
+    background-position: 125% 0;
+  }
+}
+
